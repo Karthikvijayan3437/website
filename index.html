@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Pastel Homepage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
   <style>
     /* Pastel Theme Overrides */
     :root {
-      --bs-primary: #a5c9f4;   /* Soft Blue */
+      --bs-primary: #c2c9d3;   /* Soft Blue */
       --bs-secondary: #cdb4db; /* Lavender */
       --bs-success: #b9fbc0;   /* Mint Green */
       --bs-info: #f7cad0;      /* Dusty Rose */
@@ -29,34 +33,15 @@
       text-align: center;
       overflow: hidden;
     }
-    .hero-section::before {
-      content: "welcome to my website";
-      position: center;
-      font-size: 6rem;
-      inset: 0;
-      background: url('hero-watermark.jpg') center/cover no-repeat;
-      opacity: 0.9;
-      z-index: 8;
-    }
+  
     .hero-content {
+      
       position: relative;
       z-index: 1;
     }
 
-    /* Testimonials Section */
-    .testimonials-section {
-      position: relative;
-      padding: 5rem 1rem;
-      background: var(--bs-success);
-    }
-    .testimonials-section::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: url('testimonial-watermark.jpg') center/cover no-repeat;
-      opacity: 0.1;
-      z-index: 0;
-    }
+    
+   
     .testimonial-card {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(6px);
@@ -71,7 +56,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
     <div class="container">
       <a class="navbar-brand fw-bold text-dark" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -93,76 +78,184 @@
     <div class="hero-content container">
       <h1 class="display-4 fw-bold"></h1>
       <p class="lead mt-3"></p>
-      <a href="#" class="btn btn-lg mt-4 px-4 py-2 btn-info fw-semibold text-dark rounded-pill shadow">
-        Get Started
+      <a href="login.html" class="btn btn-lg mt-4 px-4 py-2 btn-info fw-semibold text-dark rounded-pill shadow">
+      get started
       </a>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section class="testimonials-section">
-    <div class="container text-center mb-5 position-relative">
-      <h2 class="fw-bold mb-4"></h2>
-    </div>
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="testimonial-card">
-            <p class="fst-italic"></p>
-            <p class="fw-semibold text-primary mt-3"></p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="testimonial-card">
-            <p class="fst-italic"></p>
-            <p class="fw-semibold text-primary mt-3"></p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="testimonial-card">
-            <p class="fst-italic"></p>
-            <p class="fw-semibold text-primary mt-3"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
 
 
 <style>
 .hero-section {
   background-color: #e0b3df; /*soft blue color */
-  background-image: url('image/image/simple.jpg');
+  background-image: url('calm.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0.9;
+  background-size: cover;
+  min-height: 100px;
+  background-attachment: fixed; /* optional for parallax effect */
+
+}
+.hero-block {
+  margin: 12px auto;        
+  padding: 10px 15px;       
+  max-width: 600px;         
+  font-size: 1.1rem;
+}
+
+</style> 
+<!-- Hero Section -->
+<section class="hero-section text-center">
+
+  <h2>Welcome to our portal</h2>
+  
+  <div id="heroTextCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000">
+    <div class="carousel-inner">
+
+      <!-- First Block -->
+      <div class="carousel-item active">
+        <div class="hero-block">
+          <p>1: THIS PORTAL IS TO CONNECT VOLUNTEERS WITH ELDERLY PEOPLE SEEKING FOR HELP</p>
+          <p>This portal connects volunteers with patients and elderly individuals who need care — from simple companionship to daily assistance — all offered without monetary exchange.
+
+It promotes a community of compassion, where giving your time once makes you eligible to receive help in the future. By encouraging service before support, we aim to build a cycle of empathy, dignity, and mutual care.</p>
+        </div>
+      </div>
+
+      <!-- Second Block -->
+      <div class="carousel-item">
+        <div class="hero-block">
+          <p>2: WHY JOIN? BECAUSE GIVING COMES BACK IN FULL CIRCLE.</p>
+          <p>For Volunteers:
+Make a real impact by offering time, care, and kindness to those who need it most.
+
+Earn future priority access to similar caregiving support, simply by volunteering once.
+
+Experience the emotional fulfillment of helping another human being — without financial obligations.
+
+Join a network of compassionate individuals who believe in community, humanity, and service.
+
+Develop life-enriching skills in caregiving, empathy, communication, and patience.</p>
+<p>For Consumers of Service:
+Receive genuine assistance and emotional support, especially in vulnerable times.
+
+Get matched with volunteers suited to your needs — whether for light companionship or daily activity assistance.
+
+Be part of a system that values kindness over currency, where help is given from the heart.
+
+If you’ve served as a volunteer yourself, you’ll be prioritized for care in your time of need.</p>
+          
+        </div>
+      </div>
+
+      <!-- Third Block -->
+      <div class="carousel-item">
+        <div class="hero-block">
+          <p>3: DESCRIPTION OF EXPECTED USERS</p>
+          <p>Volunteers:
+Are you someone with time, empathy, and a desire to help? This portal is for individuals who want to offer non-professional support such as:
+
+Friendly companionship to those who feel isolated
+
+Assisting with daily routines, such as walking, feeding, reading, or light chores
+
+Accompanying someone to a hospital or appointment
+No medical training is required — only compassion, reliability, and respect for the dignity of others.</p>
+          <p>Consumers of Service (Patients / Elderly / Families):
+
+If you or your loved one is in need of:
+
+Simple companionship to combat loneliness
+
+Support in everyday tasks due to age or illness
+You can request a volunteer through this portal. Priority will be given to those who have previously volunteered, creating a system built on reciprocity and shared responsibility.
+
+Partner Organizations / NGOs
+
+We welcome partnerships with NGOs, senior care homes, community outreach teams, and hospitals. Use this platform to:
+
+Mobilize and manage volunteers
+
+Coordinate caregiving efforts efficiently
+
+Join a growing movement focused on human dignity, community care, and non-monetary service</p>
+        </div>
+      </div>
+      <style>
+        .hero-section h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #4ade58;
+        }
+       
+      </style>
+
+    </div>
+
+    <!-- Manual navigation -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroTextCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroTextCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+
+<section class="testimonial-section py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Testimonials</h3>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card p-3 text-center">
+                <p>"This portal helped me find volunteer work easily."</p>
+                <small>-Riya, Volunteer</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card p-3 text-center">
+                <p>"I was able to get support quickly through this platform."</p>
+                <small>-Lekshmi, customer</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card p-3 text-center">
+                <p>"thanks to the website i was able to get some help."</p>
+                <small>-Varun, customer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<style>
+.testimonial-section {
+  background-color: #b3e0ba; /*soft blue color */
+  background-image: url('simple.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: 1000px;
-  min-height:60vh;
+  min-height:100px;
   background-attachment: fixed; /* optional for parallax effect */
-}
+    
 
-.testimonials-section {
-  background-color: #b6e0b3; /*soft blue  */
-  background-image: url('image/image/watermarkwebp');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 700px; 
-}
-</style> 
-<section class="hero-section">
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <h2>Purpose of this Portal</h2>
-        <p>This portal connects people with resources and support.</p>
-      </div>
-      <div class="carousel-item">
-        <h2>Benefits of the Portal</h2>
-        <p>Easy access to help, volunteer opportunities, and community support.</p>
-      </div>
-      <div class="carousel-item">
-        <h2>Expected Users</h2>
-        <p>Volunteers, people seeking help, and organizations.</p>
-      </div>
-    </div>
 
+}
